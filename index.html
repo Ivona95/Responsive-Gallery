@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Responsive Gallery</title>
+</head>
+
+<style>
+    body {
+        font-family: sans-serif;
+        padding: 15px 20px 15px 20px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    img {
+        background-color: #6ba2d9;
+        display: flex;
+        height: 125px;
+    }
+
+    .card {
+        border: 1px solid rgb(238, 222, 222);
+        border-radius: 10px;
+        width: 210px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    .card>span {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        align-items: center;
+        background-color: #faf7ff;
+        flex-shrink: 0;
+    }
+
+    .card-container {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 1024px) {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .card-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+</style>
+
+<body>
+    <h1>Gallery Heading</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+        <div class="card">
+            <img src="./placeholder-image.png" />
+            <span>Image Title</span>
+        </div>
+    </div>
+
+    <p> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+    </p>
+</body>
+</html>
