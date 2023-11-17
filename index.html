@@ -4,135 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>Responsive Gallery</title>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<style>
-    body {
-        font-family: sans-serif;
-        padding: 15px 20px 15px 20px;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    h1 {
-        margin-bottom: 20px;
-    }
-
-    img {
-        background-color: #6ba2d9;
-        display: flex;
-        height: 125px;
-    }
-
-    .card {
-        border: 1px solid rgb(238, 222, 222);
-        border-radius: 10px;
-        width: 210px;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        margin-bottom: 30px;
-    }
-
-    .card>span {
-        display: flex;
-        justify-content: center;
-        flex: 1;
-        align-items: center;
-        background-color: #faf7ff;
-        flex-shrink: 0;
-    }
-
-    .card-container {
-        display: flex;
-        gap: 40px;
-        flex-wrap: wrap;
-    }
-
-    @media screen and (max-width: 1024px) {
-        p {
-            font-size: 1.5rem;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        p {
-            font-size: 1.5rem;
-        }
-    }
-
-    @media screen and (max-width: 414px) {
-        .card-container {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        p {
-            font-size: 1rem;
-        }
-    }
-</style>
 
 <body>
-    <h1>Gallery Heading</h1>
+    <header class="p-3">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <h1 class="display-4">My Website</h1>
+                </div>
+                <div class="d-none d-lg-block col-8">
+                    <div class="text-end align-items-center">
+                        <a class="link-items" href="#"><strong>Home</strong></a>
+                        <a class="link-items" href="#">Portfolio</a>
+                        <a class="link-items" href="#">Satff</a>
+                        <a class="link-items" href="#">Features</a>
+                        <a class="link-items" href="#">Blog</a>
+                        <a class="link-items" href="#">Contact</a>
+                        <a class="link-items" href="#">Download</a>
+                    </div>
+                </div>
+                <div class="d-lg-none col-md-6 col-sm-6 text-end">
+                    <img id="menu-icon" src="./icons/menu.png" alt="menu">Menu
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="hero-section" class="text-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="image-container col-12">
+                    <img id="hero-logo" class="col-12" src="images/hero.jpg" alt="coffee shop logo">
+                    <div class=" overflow-container">
+                        <span>We strive to make all of our creations exquisite.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card-container">
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
-        </div>
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
-        </div>
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
-        </div>
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
-        </div>
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
-        </div>
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
-        </div>
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
-        </div>
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
-        </div>
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
-        </div>
-        <div class="card">
-            <img src="./placeholder-image.png" />
-            <span>Image Title</span>
+
+    <div class="icons">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <img src="icons/icon-1.png" alt="">
+                <h1 class="text-center">Purpose</h1>
+                <p class="text-center">Vestibulum sapien nisi, suscript vitae euismod viae, imperidied egest est. Etiam
+                    tincidunt tempus.</p>
+
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <img src="icons/icon-2.png" alt="">
+                <h1 class="text-center">Quality</h1>
+                <p class="text-center">Nan commodo risus pharetra magna egestas, nec iaculis augue lobortis. Proi
+                    eleifend enim quis.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <img src="icons/icon-3.png" alt="">
+                <h1 class="text-center">Function</h1>
+                <p class="text-center">Aenean et tellus id nisi vehicula fringilla. In condimentum dui eu turpis mollis
+                    turpis suscript.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <img src="icons/icon-4.png" alt="">
+                <h1 class="text-center">Elegant</h1>
+                <p class="text-center">Mauris accusman magna in placerat lacinia. Proin sit amet neque vitae nunc
+                    pulvinar varius.</p>
+            </div>
         </div>
     </div>
 
-    <p> 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-    </p>
+    <div class="images1">
+        <div class="row">
+            <div>
+                <h1>Recent Work</h1>
+            </div>
+            <hr />
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="img-fluid img-thumbnail" src="images/bike-400x340.jpg" alt="">
+                <h1>Green Bike</h1>
+                <p class="lead">Beautiful, Travel</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="img-fluid img-thumbnail" src="images/surf-400x340.jpg" alt="">
+                <h1>Salt of the Eart</h1>
+                <p class="lead">Beautiful, Travel</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="img-fluid img-thumbnail" src="images/hills-400x340.jpg" alt="">
+                <h1>Mountain High</h1>
+                <p class="lead">Travel</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="img-fluid img-thumbnail" src="images/path-400x340.jpg" alt="">
+                <h1>When a Tree Falls</h1>
+                <p class="lead">Beautiful</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="images2">
+        <div class="row">
+            <div>
+                <h1>From the Blog</h1>
+            </div>
+            <hr />
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img class="img-fluid img-thumbnail" src="images/cow-640x340.jpg" alt="">
+                <h1>How Now</h1>
+                <p>Posted on Ocober 28, 2020</p>
+                <p class="lead">Proin et ligula laoreet , vestibulum orci nec, eleifend purus. Quisque ullamcorper sem
+                    at
+                    ipsum elementum laoreet. Integer egestas...</p>
+
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img class="img-fluid img-thumbnail" src="images/sunrise-640x340.jpg" alt="">
+                <h1>Adrift by Simon Christen</h1>
+                <p>Posted on September 29, 2020</p>
+                <p class="lead">Morbi vulputate egestas sem, eu curcus ligula ullamcorper non. Curabitur tristique velit
+                    eu
+                    mauris venenatis egestas. Phasellus bibendum... </p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img class="img-fluid img-thumbnail" src="images/grass-640x340.jpg" alt="">
+                <h1>A Walk In The Park</h1>
+                <p>Posted on August 10, 2020</p>
+                <p class="lead">Proin elementum pharetra mauris sed semper. Cras lorem arcu, vulputate ut malesuada ut,
+                    tincidunt tempor lectus. Etiam adipiscing...</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <main class="main text-light">
+        <div class="main-row row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <h1>My Website</h1>
+                <p>Quisque id dolor leo. Vivamus tincidunt in diam ac condimentum. Quisque rutrum dolor dolor, non
+                    tincidunt
+                    tellus sollicitudin vitae. Mauris a dolor ut nibh volutpat aliquam. Sed dictum magna eu massa
+                    accumsan,
+                    sit amet viverra ligula gravida. Nam vehicula ut leo aliquet sodales.</p>
+
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <h1>Recent Posts</h1>
+                <ul class="list-unstyled">
+                    <li>How Now</li>
+                    <li>Adrift by Simon Christen</li>
+                    <li>A Walk In The Park</li>
+                    <li>Time To Think</li>
+                    <li>Field Of Dreams</li>
+                </ul>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <h1>Recent Work</h1>
+                <ul class="list-unstyled">
+                    <li>Beautiful</li>
+                    <li>Travel</li>
+                    <li>Surreal</li>
+                    <li>Thoughts</li>
+                    <li>Unique</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; ITAcademy</p>
+                </div>
+        </footer>
+
+    </main>
+
+    </div>
+
+    </div>
+
+    <script src="js/jquery-3.7.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
-</html>
